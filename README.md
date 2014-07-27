@@ -18,7 +18,7 @@ The original data set consisted of records combining the following information:
 
 The script was run on a 64-bit Ubuntu 14.04 Linux system, with kernel version 3.13.0-32-generic. The script was developed and run using RStudio version 0.98.977, and R version 3.0.2 (2013-09-25).
 
-### Files
+#### Files
 
 The directory structure is referenced from the RStudio session working directory ("./")
 
@@ -66,13 +66,13 @@ source('./run_analysis.R')
 
 #### Processing Steps
 
-Pre-processing
+##### Pre-processing
 
 0. Use the unix grep command to determine variables in the test and train data sets that denote standard deviation and mean measurements.
    Variables denoting that the standard deviation and mean were passed as parameters are omitted. For example:
    feat <- grep("*-mean|-std*", features[,2])
 
-Part One
+##### Part One
 
 1. Read in the data files (using read.table)
 
@@ -88,7 +88,7 @@ Part One
 
 6. Output the temporary data frame to the file "./merged_test_train.txt" (first tidy data set)
 
-Part Two
+##### Part Two
 
 7. Calculate the averages of the standard deviation and the mean for each feature measurement, categorized by subject and activity
    (using subsetting by "Subject" and "Activity", and calls to rbind and sapply)

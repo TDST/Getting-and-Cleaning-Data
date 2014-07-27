@@ -24,13 +24,13 @@ The directory structure is referenced from the RStudio session working directory
 
 ##### Input files
 
-Test dataset
+Test data set
 
 ./UCI HAR Dataset/test/subject_test.txt
 ./UCI HAR Dataset/test/X_test.txt
 ./UCI HAR Dataset/test/y_test.txt
 
-Training dataset
+Training data set
 
 ./UCI HAR Dataset/train/subject_train.txt
 ./UCI HAR Dataset/train/X_train.txt

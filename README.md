@@ -22,7 +22,7 @@ The script was run on a 64-bit Ubuntu 14.04 Linux system, with kernel version 3.
 
 The directory structure is referenced from the RStudio session working directory ("./")
 
-* Input files
+##### Input files
 
 Test dataset
 
@@ -39,7 +39,7 @@ Training dataset
 ./UCI HAR Dataset/activity_labels.txt
 ./UCI HAR Dataset/features.txt
 
-* Output files
+##### Output files
 
 ./merged_test_train.txt
 ./test_train_averages.txt

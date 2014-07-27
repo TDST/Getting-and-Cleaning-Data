@@ -16,21 +16,17 @@ The original data set consisted of records combining the following information:
 
 ### 2. Experimental Environment
 
-The script was run on a 64-bit Ubuntu 14.04 Linux system, with kernel version 3.13.0-32-generic. The script was developed and run using RStudio version 0.98.977, and R version 3.0.2 (2013-09-25).
-
-#### Files
-
-The directory structure is referenced from the RStudio session working directory ("./")
+The script was run on a 64-bit Ubuntu 14.04 Linux system, with kernel version 3.13.0-32-generic. The script was developed and run using RStudio version 0.98.977, and R version 3.0.2 (2013-09-25). The directory structure is referenced from the RStudio session working directory ("./")
 
 ##### Input files
 
-Test data set
+Test data set:
 
 ./UCI HAR Dataset/test/subject_test.txt
 ./UCI HAR Dataset/test/X_test.txt
 ./UCI HAR Dataset/test/y_test.txt
 
-Training data set
+Training data set:
 
 ./UCI HAR Dataset/train/subject_train.txt
 ./UCI HAR Dataset/train/X_train.txt

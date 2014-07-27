@@ -17,6 +17,8 @@ The original data set consisted of:
 * Its activity label.
 * An identifier of the subject who carried out the experiment. 
 
+The units are radians/second, and gravity units 'g'.
+
 The data set for this experiment was available at:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 

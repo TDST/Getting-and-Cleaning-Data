@@ -1,9 +1,10 @@
-## 1. Source of the Experimental Data
+### 1. Source of the Experimental Data
 
 The data used in this exercise was initially collected as part of the "Human Activity Recognition Using Smartphones Data Set" research project. This project built-up a database of motion readings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone equipped with inertial sensors. Each subject wore a waist-mounted Samsung Galaxy S II smartphone, that measured 3-axial linear acceleration and 3-axial angular velocity as the subject performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).
 
-The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). Full details are available at:
-http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window).
+
+Full details are available at: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 The original data set consisted of records combining the following information:
 
@@ -13,9 +14,9 @@ The original data set consisted of records combining the following information:
 * Its activity label.
 * An identifier of the subject who carried out the experiment. 
 
-## 2. Experimental Environment
+### 2. Experimental Environment
 
-The tests were run on a 64-bit Ubuntu 14.04 Linux system, with kernel version 3.13.0-32-generic. The R scripts were developed and run using RStudio version 0.98.977, and R version 3.0.2 (2013-09-25).
+The script was run on a 64-bit Ubuntu 14.04 Linux system, with kernel version 3.13.0-32-generic. The script was developed and run using RStudio version 0.98.977, and R version 3.0.2 (2013-09-25).
 
 ### Files
 
@@ -24,10 +25,13 @@ The directory structure is referenced from the RStudio session working directory
 * Input files
 
 Test dataset
+
 ./UCI HAR Dataset/test/subject_test.txt
 ./UCI HAR Dataset/test/X_test.txt
 ./UCI HAR Dataset/test/y_test.txt
+
 Training dataset
+
 ./UCI HAR Dataset/train/subject_train.txt
 ./UCI HAR Dataset/train/X_train.txt
 ./UCI HAR Dataset/train/y_train.txt
@@ -40,14 +44,14 @@ Training dataset
 ./merged_test_train.txt
 ./test_train_averages.txt
 
-## 3. Running the Code and Processing Overview
+### 3. Running the Code and Processing Overview
 
-### Executing the script
+#### Executing the script
 
 From inside RStudio, enter the following command at the prompt:
 source('./run_analysis.R')
 
-### Key script variables
+#### Key script variables
 
 * test_subject_test: subject identifiers (data.frame) [integer: 1..30]
 * test_X_test:	   map of subject to feature measurements data (data.frame) [double: [-1,1]]
@@ -60,7 +64,7 @@ source('./run_analysis.R')
 * test_train_averages: tidy data set, containing the averages of the stadard devication and mean measurements, from the merged
 		    test and train data sets
 
-### Processing Steps
+#### Processing Steps
 
 Pre-processing
 
